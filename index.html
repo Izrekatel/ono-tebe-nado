@@ -13,18 +13,18 @@
     <header class="header content-section">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__link">главная</a>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link_active" href="#">главная</a>
           </li>
         </ul>
         <ul class="header__links-list">
           <li class="header__links-list-item">
-            <a class="header__link_active" href="#lots">посмотреть лоты</a>
+            <a class="header__link" href="#lots">посмотреть лоты</a>
           </li>
         </ul>
         <ul class="header__links-list">
           <li class="header__links-list-item">
-            <a class="header__link_active" href="#about">об аукционе</a>
+            <a class="header__link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -72,64 +72,74 @@
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button uppercase">Сделать ставку</button>
+          <button class="bet-button uppercase" type="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots" id="lots">
-        <h2 class="lots__heading">Лоты</h2>
+        <h2 class="lots__heading uppercase">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item card_type_film">
-            <div class="overlay"></div>
-            <h3 class="card__title">
-              Фильм режиссера который бросил киношколу
-            </h3>
-            <p class="card__text">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </p>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="">
+              <article class="card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title uppercase">
+                  Фильм режиссера который бросил киношколу
+                </h3>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article> 
+            </a>  
           </li>
-          <li class="lots__card-list-item card_type_book">
-            <div class="overlay"></div>
-            <h3 class="card__title">
-              Книга, где описан один скучный день из жизни рекламного агента
-            </h3>
-            <p class="card__text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="">
+              <article class="card_type_book">
+                <div class="overlay"></div>
+                <h3 class="card__title uppercase">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                  переходами на древнеанглийский. В ней одновременно рассказывается
+                  о 16 июня 1904 года и об истории литературы, начиная с античных
+                  времён. И это всё накладывается на эпическую поэму Гомера. Сколько
+                  бы вы поставили на «Улисса» Джеймса Джойса?
+                </p>
+              </article>
+            </a>  
           </li>
-          <li class="lots__card-list-item card_type_picture">
-            <div class="overlay"></div>
-            <h3 class="card__title">
-              Картина, которую повторит даже 5-летний сын маминой подруги
-            </h3>
-            <p class="card__text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </p>
-          </li>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="">
+              <article class="card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="card__title uppercase">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+                  похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
+                  Сколько бы вы на такое поставили, если бы не знали, что это — одна
+                  из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>  
+        </li>
         </ul>
-        <p class="lots__look-more-link">
-          <a href="#">посмотреть больше</a>
-        </p>
+        <a class="lots__look-more-link" href="#">посмотреть больше</a>
       </section>
       <section class="about content-section" id="about">
-        <div class="about__logo">
-          <blockquote class="about__quote">
+        <div class="about__logo-container">
+          <figure class="about__quote">
             <img
               class="about__logo-image"
               src="./images/logo-white.svg"
               alt="White logo"
             />
-          </blockquote>
+          </figure>
         </div>
         <div class="about__column">
-          <h2 class="about__title">Об аукционе</h2>
+          <h2 class="about__title uppercase">Об аукционе</h2>
           <div class="about__text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -170,17 +180,17 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link">главная</a>
+            <a class="footer__menu-link_active" href="#">главная</a>
           </li>
         </ul>
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link_active" href="#lots">посмотреть лоты</a>
+            <a href="#lots">посмотреть лоты</a>
           </li>
         </ul>
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link_active" href="#about">об аукционе</a>
+            <a href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
