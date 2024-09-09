@@ -1,16 +1,20 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  justify-content: space-around;
-  margin: 92px 50px 96px 50px;
+  margin: 92px 24px 96px 24px;
   font-size: 18px;
-  gap: 40px;
+  gap: 35px;
 }
 
 .header__menu {
+  align-content: center;
+  margin-top: 6px;
+  margin-left: 26px;
+}
+
+.header__links-list {
   display: flex;
   justify-content: space-between;
-  align-self: center;
 }
 
 .header__links-list-item {
@@ -35,7 +39,8 @@
 }
 
 .header__logo-image {
-  width: 129.11px;
+  width: 148px;
+  height: 105px;
 }
 
 .address {
@@ -44,14 +49,26 @@
   line-height: 135%;
 }
 
-.adress-href {
-  display: block;
-  letter-spacing: 0.01em;
+.header__address {
+  align-content: center;
+  margin-left: 149px;
+  margin-right: 35px;
+  line-height: 135%;
 }
 
-.header__address {
-  margin-left: 156px;
-  margin-right: 35px;
+.header__adress-href {
+  letter-spacing: 0.01em;
+  margin-left: 2px;
+  margin-top: 6px;
+}
+
+.adress-href-number {
+  line-height: 170%;
+  margin-left: 0px;
+}
+
+.adress-text {
+  margin-left: 3px;
 }
 
 .uppercase {
@@ -80,7 +97,7 @@
 .cover__title {
   display: block;
   font-weight: bold;
-  margin: 115px 0 135px 0;
+  margin: 115px 0 136px 0;
   font-size: 100px;
   letter-spacing: 0.3em;
 }
@@ -118,16 +135,18 @@
   align-items: center;
   font-size: 22px;
   line-height: 127%;
+  margin-bottom: 1px;
   margin-left: 28px;
 }
 
 .cover__description-text {
-  word-spacing: 19px;
+  word-spacing: 18.5px;
 }
 
 .bet-button {
   background-color: transparent;
-  padding: 10px 30px 13px 34px;
+  padding: 11px 32px;
+  font-family: inherit;
   font-size: 22px;
   color: #fff;
   border: 1px solid #fff;
@@ -135,7 +154,7 @@
 
 .lots {
   display: block;
-  margin: 180px 24px 0 24px;
+  margin: 179px 24px 0 24px;
 }
 
 .lots__heading {
@@ -164,7 +183,7 @@
 
 .card {
   height: 100%;
-  padding: 51px 40px 48px 40px;
+  padding: 51px 40px 46px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -203,13 +222,13 @@
 .lots__look-more-link {
   display: block;
   font-size: 20px;
-  margin: 30px 0px 0 40px;
+  margin: 30px 0px 0 41px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 166px 29px 0 39px;
+  margin: 168px 29px 0 39px;
 }
 
 .about__logo-container {
@@ -223,6 +242,7 @@
   border-radius: 100%;
   background-color: #000;
   place-content: center;
+  margin-top: 14px;
   margin-left: 0px;
 }
 
@@ -253,16 +273,18 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 180px 50px 88px 50px;
+  margin: 181px 50px 88px 50px;
   font-size: 18px;
 }
 
 .footer__address {
   margin-right: 100px;
+  margin-left: 2px;
 }
 
 .footer__menu {
   align-items: center;
+  margin-left: 2px;
 }
 
 .footer__menu-list {
